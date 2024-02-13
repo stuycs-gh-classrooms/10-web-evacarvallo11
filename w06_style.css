@@ -1,5 +1,5 @@
 body {
-background-color: yellow;
+background-color: pink;
 }
 
 h1,
@@ -7,5 +7,5 @@ p {
 color: purple;
 }
 a {
-border: 3 solid blue;
+border: 3 solid purple;
 }
