@@ -5,9 +5,9 @@ background-color: pink;
 h1,
 p {
 color: purple;
-  border: 1 solid purple;
+border: 1 solid purple;
 }
 a,
 ol {
-  font-weight: bold
+  font-weight: bold;
 }
