@@ -1,5 +1,5 @@
 li {
-display: inline;
+float:left;
 padding: 20px;
 }
 body {
