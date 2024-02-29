@@ -1,11 +1,11 @@
 body {
-background-color: lightcyan
+background-color: lightcyan;
 }
 h1 {
   text-align: center;
 }
 
-p {
+nav {
   display:block;
-  text-align: center;
+  margin:auto;
 }
