@@ -4,6 +4,9 @@ background-color: lightcyan;
 margin: 20px;
 }
 
+h1 {
+border: 2px solid blue;
+}
 ol {
   display: block;
   margin: auto;
