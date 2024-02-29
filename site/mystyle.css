@@ -4,9 +4,7 @@ background-color: lightcyan;
 h1 {
   text-align: center;
 }
-
 nav {
-  width: 75px;
-  height: 200px;
-  border: solid;
+  display:inline;
+  padding: 20px
 }
