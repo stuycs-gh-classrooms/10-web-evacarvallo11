@@ -9,6 +9,11 @@ li {
   margin: 0 20px;
 }
 
+ol {
+  display: block;
+  margin: auto;
+}
+
 .navigation ul {
   font: bold 11px;
   margin: 0;
