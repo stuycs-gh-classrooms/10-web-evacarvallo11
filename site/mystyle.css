@@ -3,10 +3,12 @@ body {
 background-color: lightcyan;
 margin: 20px;
 }
-h1 { 
+h1 {
   text-align: center;
   border: 2px solid blue;
 }
+
+
 
 ol {
   display: block;
@@ -17,6 +19,7 @@ ol {
   font: bold 11px;
   margin: 0;
   padding: 0;
+  display:f lex;
 }
 .navigation li {
   display: inline-block;
