@@ -1,9 +1,10 @@
-li {
-float:left;
-padding: 20px;
-}
+
 body {
 background-color: lightcyan;
 margin: 20px;
 }
 
+li {
+  float: left;
+  margin: 0 20px;
+}
