@@ -39,7 +39,13 @@ li a:hover:not(.active) {
   background-color: hotpink;
 }
 
-h3 {
+h2 {
 background-color: hotpink;
 border: 2px solid black;
+}
+
+div  {
+background-color: #f1f1f1;
+  width: 100px;
+  overflow: auto;
 }
