@@ -2,6 +2,7 @@
 body {
 margin: 20px;
 }
+
 h1 {
   background-color: #f1f1f1;
   padding: 20px;
@@ -13,9 +14,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: indigo;
 }
 
+li {
+  display: inline;
+  background-color: indigo;
+}
 
 li a {
   display: block;
