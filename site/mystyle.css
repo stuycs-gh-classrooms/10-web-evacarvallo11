@@ -44,9 +44,7 @@ background-color: hotpink;
 border: 2px solid black;
 }
 
-div  {
-  display: block;
+p  {
 background-color: #f1f1f1;
-  width: 100px;
-  overflow: auto;
+font-size: 16px
 }
