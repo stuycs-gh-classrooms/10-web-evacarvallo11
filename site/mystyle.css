@@ -14,11 +14,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #333;
 }
 
 li {
-  display: inline;
-  background-color: indigo;
+  float: left;
 }
 
 li a {
@@ -29,9 +29,10 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: hotpink;
+li a:hover:not(.active) {
+  background-color: #111;
 }
-.current {
-background-color: hotpink;
+
+.active {
+  background-color: hotpink;
 }
