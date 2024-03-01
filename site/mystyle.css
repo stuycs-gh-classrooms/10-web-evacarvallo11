@@ -16,9 +16,6 @@ ul {
   background-color: indigo;
 }
 
-li {
-  float: left;
-}
 
 li a {
   display: block;
