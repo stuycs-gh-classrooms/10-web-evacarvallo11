@@ -38,3 +38,8 @@ li a:hover:not(.active) {
 .active {
   background-color: hotpink;
 }
+
+h3 {
+background-color: hotpink;
+border: 2px solid black;
+}
