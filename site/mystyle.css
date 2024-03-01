@@ -13,11 +13,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: grey;
+  background-color: indigo;
 }
 
 li {
-  float: left;
+  display: inline;
 }
 
 li a {
@@ -29,8 +29,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: hotpink;
 }
 .current {
-background-color: indigo;
+background-color: hotpink;
 }
