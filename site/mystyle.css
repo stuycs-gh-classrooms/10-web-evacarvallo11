@@ -8,12 +8,11 @@ h1 {
   padding: 20px;
   text-align: center;
 }
-ul {
-list-style-type: none;
-}
+
 .topbar {
   overflow: hidden;
   background-color: silver;
+  list-style-type: none;
 }
 
 
