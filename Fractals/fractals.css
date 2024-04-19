@@ -1,0 +1,47 @@
+
+body {
+margin: 20px;
+background-color: lavender;
+}
+
+h1 {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.active {
+  background-color: hotpink;
+}
+
+h2 {
+background-color: hotpink;
+border: 2px solid black;
+}
+
+p  {
+background-color: #f1f1f1;
+font-size: 20px
+}
