@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fractals</title>
+    <link href="fractals.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1>Fractals</h1>
+    <nav>
+<ul>
+  <li><a href="http://homer.stuy.edu/~ecarvallo60/fractals/fractals.html">Koch Curve</a></li>
+  <li><a class="active" href="http://homer.stuy.edu/~ecarvallo60/fractals/fractals2.html">Sierpinski</a></li>
+  <li><a href="http://homer.stuy.edu/~ecarvallo60/fractals/fractals3.html">Tree</a></li>
+</ul>
+    </nav>
+    <h2>Sierpinski</h2>
+    <p>
+      Basic Sierpinski Triangle
+<pre><code>
+sierpinski(t, 5, 200)
+</code></pre>
+    </p>
+    <img
+src="images/WholeNote.jpg"
+alt="Basic Sierpinski Triangle"
+height= 60 />
+    <p>
+      Music theory is the study of the practices and possibilities of music. This consists of melody, rhythm, counterpoint, harmony, form, tonal systems,
+      scales, tuning, intervals, consonance, dissonance, durational proportions, etc.
+    </p>
+    <img
+src="images/WholeNote.jpg"
+alt="New Sierpinski Triangle"
+height= 60 />
+    <p>
+    <pre><code>
+def hypotenuse(t, size):
+    t.lt(45)
+    t.fd(size)
+    t.bk(size)
+    t.rt(45)
 
+def square(t, size):
+    t.lt(90)
+    t.fd(size)
+    t.rt(90)
+    t.fd(size)
+    t.rt(90)
+    t.fd(size)
+    t.rt(90)
+    t.fd(size)
+    t.rt(180)
+      
+ def sierpinski(t, depth, size, scale_factor=1):
+    if depth == 1:
+        square(t, size)
+        hypotenuse(t, size * (2 ** (1/2)))
+    else:
+        sierpinski(t, depth-1, size/2)
+        t.fd(size/2)
+        sierpinski(t, depth-1, size/2)
+        t.lt(90)
+        t.fd(size/2)
+        t.rt(90)
+        sierpinski(t, depth-1, size/2)
+        t.rt(180)
+        t.fd(size/2)
+        t.rt(180)
+        sierpinski(t, depth-1, size/2)
+        t.rt(90)
+        t.fd(size/2)
+        t.lt(90)
+</code></pre>
+    </p>
+  </body>
+</html>
