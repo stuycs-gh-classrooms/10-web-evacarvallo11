@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fractals</title>
+    <link href="fractals.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1>Fractals</h1>
+    <nav>
+<ul>
+  <li><a class="active" href="http://homer.stuy.edu/~ecarvallo60/fractals/fractals.html">Koch Curve</a></li>
+  <li><a href="http://homer.stuy.edu/~ecarvallo60/fractals/fractals2.html">Sierpinski</a></li>
+  <li><a href="http://homer.stuy.edu/~ecarvallo60/fractals/fractals3.html">Tree</a></li>
+</ul>
+    </nav>
+    <h2>Koch Curve</h2>
+    <p>
+      Basic Koch Curve 
+<pre><code>
+ koch_curve(t, 4, 20)
+</code></pre>
+    </p>
+    <img
+src="images/WholeNote.jpg"
+alt="Basic Koch Curve"
+height= 60 />
+    <p>
+      Music theory is the study of the practices and possibilities of music. This consists of melody, rhythm, counterpoint, harmony, form, tonal systems,
+      scales, tuning, intervals, consonance, dissonance, durational proportions, etc.
+    </p>
+    <img
+src="images/WholeNote.jpg"
+alt="New Koch Curve"
+height= 60 />
+    <p>
+    <pre><code>
+ def koch_curve(t, depth, size):
+    if (depth == 1):
+        t.pencolor((random.randrange(50, 255), random.randrange(0, 25), random.randrange(50, 250)))
+        t.fd(size)
+    else:
+        koch_curve(t, depth-1, size)
+        t.rt(60)
+        koch_curve(t, depth-1, size)
+        t.lt(120)
+        koch_curve(t, depth-1, size)
+        t.rt(60)
+        koch_curve(t, depth-1, size)
+</code></pre>
+    </p>
+  </body>
+</html>
