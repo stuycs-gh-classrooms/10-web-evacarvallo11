@@ -1,1 +1,62 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fractals</title>
+    <link href="fractals.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1>Fractals</h1>
+    <nav>
+<ul>
+  <li><a href="http://homer.stuy.edu/~ecarvallo60/Fractals/fractals.html">Koch Curve</a></li>
+  <li><a href="http://homer.stuy.edu/~ecarvallo60/Fractals/fractals2.html">Sierpinski</a></li>
+  <li><a class="active" href="http://homer.stuy.edu/~ecarvallo60/fractals/Fractals3.html">Tree</a></li>
+</ul>
+    </nav>
+    <h2>Tree</h2>
+    <p>
+      Basic Tree
+<pre><code>
+sierpinski(t, 5, 200)
+</code></pre>
+    </p>
+    <img
+src="images/WholeNote.jpg"
+alt="Basic Tree"
+height= 60 />
+    <p>
+      Music theory is the study of the practices and possibilities of music. This consists of melody, rhythm, counterpoint, harmony, form, tonal systems,
+      scales, tuning, intervals, consonance, dissonance, durational proportions, etc.
+    </p>
+    <img
+src="images/WholeNote.jpg"
+alt="New Tree"
+height= 60 />
+    <p>
+    <pre><code>
+def tree(t, depth, size, angle):
+    if depth == 0:
+        t.fd(size)
+        t.circle(3)
+        t.bk(size)
+    else:
+        r = random.randrange(1, 3)
+        if r == 1:
+            angle = angle * 0.75
+        elif r == 2:
+            angle = angle * 1.2
+        elif r == 3:
+            angle = angle * 1.50
+        t.fd(size)
+        t.rt(angle)
+        tree(t, depth-1, size * 0.75, angle)
+        t.lt(2 * angle)
+        tree(t, depth-1, size * 0.75, angle)
+        t.rt(angle)
+        t.bk(size)
+        
+</code></pre>
+    </p>
+  </body>
+</html>
