@@ -12,7 +12,7 @@ HTML_HEADER = """
 
 <head>
 <meta charset="utf-8">
-<title>Hello</title>
+<title>Personality test</title>
 </head>
 """
 
